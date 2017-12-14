@@ -205,8 +205,17 @@ body {
 }
 
 .showmewhensmall {
-        display: none;
-    }
+    display: none;
+}
+
+/* todo my dudes */
+#search {
+    display: none;
+}
+
+.plshide {
+    
+}
 
 @media screen and (max-width: 960px) {
     .showmewhensmall {
@@ -223,5 +232,9 @@ body {
     
     .plshide:hover {
         height: 350px;
+    }
+    
+    .search {
+        display: none;
     }
 }
