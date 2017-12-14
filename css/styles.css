@@ -204,8 +204,22 @@ body {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1080px) {
-    .plshide {
+.showmewhensmall {
         display: none;
+    }
+
+@media screen and (max-width: 960px) {
+    .showmewhensmall {
+        margin-left: 1em;
+        display: inline-block;
+    }
+    
+    .plshide {
+        height: 42px;
+        overflow: hidden;
+    }
+    
+    .plshide:hover {
+        height: 350px;
     }
 }
