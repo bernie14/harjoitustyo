@@ -217,6 +217,8 @@ body {
     .plshide {
         height: 42px;
         overflow: hidden;
+        transition: 0.4s;
+        transition-timing-function: ease-in-out;
     }
     
     .plshide:hover {
