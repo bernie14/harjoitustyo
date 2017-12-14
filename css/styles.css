@@ -173,6 +173,7 @@ body {
     border: 1px transparent white;
     border-radius: 2px;
     box-shadow: 2px 2px 4px #717171;
+    width: 100%;
 }
 
 .pure-button {
@@ -201,4 +202,10 @@ body {
 
 .underline {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1080px) {
+    .plshide {
+        display: none;
+    }
 }
