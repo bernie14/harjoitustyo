@@ -36,6 +36,10 @@ body {
     text-align: left;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 
 
 .home-menu {
@@ -216,12 +220,12 @@ body {
     box-shadow: none;
 }
 
-.underline {
-    text-decoration: underline;
-}
-
 .search {
     margin: 0.5em;
+}
+
+.sidemenu {
+    position: fixed;
 }
 
 /* hiding the side menu on small screens */
@@ -253,8 +257,4 @@ body {
 .maxpayne {
     max-width: 1000px;
     margin: auto;
-}
-
-.thing {
-    position: fixed;
 }
