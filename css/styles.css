@@ -10,6 +10,14 @@ body {
     line-height: 1.7em;
 }
 
+* {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.sitelogo {
+    font-family: 'Fascinate Inline', cursive;
+}
+
 
 /* small adjustments needed in many places */
 .l-box {
