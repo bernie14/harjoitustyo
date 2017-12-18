@@ -23,11 +23,9 @@ body {
 
 .home-menu {
     padding: 0.5em;
+    background: #712f52;
     text-align: center;
     box-shadow: 0 4px 3px rgba(0,0,0, 0.30);
-}
-.home-menu {
-    background: #712f52;
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -209,12 +207,15 @@ body {
 }
 
 /* todo my dudes */
-#search {
-    display: none;
+.search {
+    margin: 0.5em;
 }
 
 @media screen and (max-width: 960px) {
-    .showmewhensmall {
+    .plshide {
+        display: none;
+    }
+    /*.showmewhensmall {
         margin-left: 1em;
         display: inline-block;
     }
@@ -233,4 +234,5 @@ body {
     .search {
         display: none;
     }
+    */
 }
