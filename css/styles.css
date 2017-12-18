@@ -1,3 +1,4 @@
+/* border box stuff */
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5,10 +6,12 @@
 }
 
 body {
-    color: #7d8788;
+    color: #747d7e;
     line-height: 1.7em;
 }
 
+
+/* small adjustments needed in many places */
 .l-box {
     padding: 1em;
 }
@@ -25,6 +28,8 @@ body {
     text-align: left;
 }
 
+
+
 .home-menu {
     padding: 0.5em;
     background: #712f52;
@@ -32,7 +37,6 @@ body {
     box-shadow: 0 4px 3px rgba(0,0,0, 0.30);
 }
 .pure-menu.pure-menu-fixed {
-    /* Fixed menus normally have a border at the bottom. */
     border-bottom: none;
     /* I need a higher z-index here because of the scroll-over effect. */
     z-index: 4;
@@ -58,26 +62,36 @@ body {
     color: #aecce5;
 }
 
+
+
 .footer {
     background: #111;
     position: fixed;
     width: 100%;
-    bottom: -40px;
+    bottom: -50px;
     padding: 1em;
     z-index: 3;
     transition: 0.4s;
     transition-timing-function: ease-in-out;
 }
 
+/* making the footer show its contents when hovered */
 .footer:hover {
     bottom: 0;
 }
 
+/* replacing some pure css link styles that don't fit the footer */
+.footer-link:hover {
+    background: #111;
+    color: #dedede;
+}
 
-/* splash trash */
+
+
+
 .splash-container {
     background-color: #d6c81f;
-    background-image: url("img/Starry_Night_Over_the_Rhone.jpg");
+    background-image: url(../img/Starry_Night_Over_the_Rhone.jpg);
     z-index: 1;
     overflow: hidden;
     width: 100%;
@@ -87,9 +101,7 @@ body {
     position: fixed !important;
 }
 
-
 .content-wrapper {
-    /* These styles are required for the "scroll-over" effect */
     position: absolute;
     top: 10%;
     width: 100%;
@@ -99,20 +111,13 @@ body {
     padding-bottom: 6em;
 }
 
+/* making some height so the parallax effect works */
 .content-wrapperplus {
     top: 70%;
 }
 
-.content-head {
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin: 2em 0 1em;
-}
-
-
+/* css for the parallax effect  */
 .splash {
-    /* absolute center .splash within .splash-container */
     width: 80%;
     height: 50%;
     margin: auto;
@@ -121,8 +126,7 @@ body {
     text-align: center;
 }
 
-/* This is the main heading that appears on the blue section */
-.splash-head {
+.splash-title {
     font-size: 250%;
     color: white;
     font-weight: 100;
@@ -131,13 +135,14 @@ body {
     text-transform: uppercase;
 }
 
-/* This is the subheading that appears on the blue section */
-.splash-subhead {
+.splash-text {
     color: white;
     font-size: 20px;
     opacity: 0.8;
 }
+/* css for the parallax effect ends  */
 
+/* css for the about page  */
 .abouttext {
     color: #7b7b7b;
     padding-top: 5em;
@@ -165,17 +170,15 @@ body {
     padding-right: 3em;
     border-bottom: 1px solid #afa9a9;
 }
+/* css for the about page ends  */
 
 .pure-form label {
-    margin: 1em 0 0;
     font-weight: bold;
-    font-size: 100%;
 }
 
 .pure-form input[type] {
     border: 2px solid #ddd;
     box-shadow: none;
-    font-size: 100%;
     width: 100%;
     margin-bottom: 1em;
 }
@@ -205,13 +208,6 @@ body {
     box-shadow: none;
 }
 
-.custom-restricted-width {
-    /* To limit the menu width to the content of the menu: */
-    display: inline-block;
-    /* Or set the width explicitly: */
-    /* width: 10em; */
-}
-
 .underline {
     text-decoration: underline;
 }
@@ -227,6 +223,7 @@ body {
     }
 }
 
+/* altering the padding for mobile devices */
 @media screen and (max-width: 550px) {
     .abouttext {
         padding-left: 0.5em;
