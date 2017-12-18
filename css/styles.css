@@ -53,7 +53,7 @@ body {
 .home-menu li a:focus {
     background: none;
     border: none;
-    color: #e5b4ae;
+    color: #aecce5;
 }
 
 .footer {
@@ -211,10 +211,6 @@ body {
 /* todo my dudes */
 #search {
     display: none;
-}
-
-.plshide {
-    
 }
 
 @media screen and (max-width: 960px) {
